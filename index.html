@@ -6,25 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DOM - Stop Watch</title>
   </head>
-  <body>
+  <body class="bg-yellow-50">
     <main class="mt-24 text-center">
-      <h1 class="display text-6xl font-semibold">0s</h1>
-      <div class="btn">
+      <div
+        class="mx-5 items-center justify-around gap-5 grid-cols-1 sm:grid-cols-3 grid display"
+      >
+        <h1 class="py-3 sm:py-5 bg-gray-100 text-4xl sm:text-6xl font-semibold">
+          <span id="display-min">0</span>min
+        </h1>
+        <h1 class="py-3 sm:py-5 bg-gray-100 text-4xl sm:text-6xl font-semibold">
+          <span id="display-sec">0</span>sec
+        </h1>
+        <h1 class="py-3 sm:py-5 bg-gray-100 text-4xl sm:text-6xl font-semibold">
+          <span id="display-ms">0</span>ms
+        </h1>
+      </div>
+      <div class="mx-3 grid grid-cols-3 gap-2">
         <button
           id="start-btn"
-          class="mt-10 mx-5 bg-lime-400 py-2 px-4 rounded-full text-2xl hover:bg-lime-200"
+          class="mt-10 md:mx-20 bg-lime-400 py-2 px-4 rounded-full text-1xl sm:text-2xl hover:bg-lime-200"
         >
           Start
         </button>
         <button
           id="pause-btn"
-          class="mt-10 mx-5 bg-yellow-300 py-2 px-4 rounded-full text-2xl hover:bg-yellow-200"
+          class="mt-10 md:mx-20 bg-yellow-300 py-2 px-4 rounded-full text-1xl sm:text-2xl hover:bg-yellow-200"
         >
           Pause
         </button>
         <button
           id="reset-btn"
-          class="mt-10 mx-5 bg-red-400 py-2 px-4 rounded-full text-2xl hover:bg-red-300 text-white"
+          class="mt-10 md:mx-20 bg-red-400 py-2 px-4 rounded-full text-1xl sm:text-2xl hover:bg-red-300 text-white"
         >
           Reset
         </button>
